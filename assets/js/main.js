@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 		.done(function(response){
              //div vacio//
-             $("#contenedorPoke").append("<div id='pokemon'>"+'<p>Pokemon</p>'+ '<p>'+ response.name +'</p>' + '<p>Habilidades:'+ response.abilities[0].name + '</p>'+ '<p>Tipo:'+ response.types[0].name + '</p>'+  '<p>Altura:'+ response.height + '</p>' + '<p>Peso:'+ response.weight + '</p>' +"</div>")
+             $("#contenedorPoke").append("<div id='pokemon'>"+'<h1>Pokemon</h1>'+ '<h3>'+ response.name +'</h3>' + '<p>Habilidades:'+ response.abilities[0].name + '</p>'+ '<p>Tipo:'+ response.types[0].name + '</p>'+  '<p>Altura:'+ response.height + '</p>' + '<p>Peso:'+ response.weight + '</p>' +"</div>")
              console.log(response.name);
          })
 
