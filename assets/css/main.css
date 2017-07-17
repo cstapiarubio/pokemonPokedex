@@ -1,7 +1,10 @@
 *{
 	margin: 0;
 	padding:0;
+	font-family: 'Marko One', serif;
 }
+
+/*diseño nav*/
 
 nav{
 	background-image: url(../img/pokemon.png);
@@ -14,11 +17,23 @@ nav{
 	background-size:480px 160px;
 	background-position:55% 95%;	
 }
+
 nav h1,
 nav form{
 	padding-left: 30px;
 }
 
+/*diseño home*/
 #home{
 	background-color: #71D7B6;
+}
+
+.col-md-3{
+color: #58615C;
+font-weight: 600;
+text-align: center;
+}
+
+.col-md-3 img{
+	background-color: #C3F9BD;
 }

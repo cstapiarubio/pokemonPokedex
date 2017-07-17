@@ -6,12 +6,12 @@ $(document).ready(function(){
 			url: 'http://pokeapi.co/api/v1/pokemon/' + nombrePoke,
 			type: 'GET',
 			datatype: 'JSON',
-			
+
 		})
 
 		.done(function(response){
              //div vacio//
-             $("#contenedorPoke").append("<div id=''>"+'<p>Pokemon</p>'+ response.name  + response.abilities[0].name + response.abilities[1].name + response.types[0].name + response.types[1].name+  response.height + response.weight +"</div>")
+             $("#contenedorPoke").append("<div id='pokemon'>"+'<p>Pokemon</p>'+ '<p>'+ response.name +'</p>' + '<p>Habilidades:'+ response.abilities[0].name + '</p>'+ '<p>Tipo:'+ response.types[0].name + '</p>'+  '<p>Altura:'+ response.height + '</p>' + '<p>Peso:'+ response.weight + '</p>' +"</div>")
              console.log(response.name);
          })
 

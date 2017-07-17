@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pokedex</title>
+	<link href="https://fonts.googleapis.com/css?family=Marko+One" rel="stylesheet">
 	<script src="https://use.fontawesome.com/2c0c95ddaa.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -15,138 +16,123 @@
 			<input id="nombre" class="form-control mr-sm-2" type="text" placeholder="Search for pokemon">
 			<i id="botonVerPoke" class="fa fa-search" aria-hidden="true"></i>
 		</form>
-		<div id="contenedorPoke"></div>
 	</nav>
 
 	<!--home-->
 	<section id="home"> 
 		<div class="container">
+			<!--contenedor-->
 			<div class="row">
-				<div class="col-md-9">
-					<div class="row"><!--primer row-->
-						<div class="col-md-2">
-							<img src="assets/img/015.png" id="mostrar">
-							<p>Beedrill</p>
-							<div class="row">
-								<div class="col-lg-offset-3 col-lg-6" id="pokemon"></div>
-							</div>
-
-						</div>
-						<div class="col-md-2">
-							<img class="image" src="assets/img/024.png">
-							<p>Arbok</p>
-							<div class="row">
-								<div class="col-lg-offset-3 col-lg-6" id="pokemon"></div>
-							</div>
-
-						</div>
-						<div class="col-md-2">
-							<img class="image" src="assets/img/059.png">
-							<p>Arcanine</p>
-
-						</div>
-						<div class="contenedor"></div>
-						<div class="col-md-2">
-							<img class="image" src="assets/img/063.png">
-							<p>Abra</p>
-
-						</div>
-						<div class="contenedor"></div>
-						<div class="col-md-2">
-							<img class="image" src="assets/img/065.png">
-							<p>Alakazam</p>
-
-						</div>
-						<div class="contenedor"></div>
-						<div class="col-md-2">
-							<img class="image" src="assets/img/142.png">
-							<p>Aerodactyl</p>
-
-						</div>
-						<div class="contenedor"></div>
-					</div><!--primer row-->
-
-					<div class="row"><!--segundo row-->
-						<div class="col-md-2">
-							<img src="assets/img/144.png">
-							<p>Articuno</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/153.png">
-							<p>Bayleef</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/168.png">
-							<p>Ariados</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/181.png">
-							<p>Ampharos</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/182.png">
-							<p>Bellossom</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/184.png">
-							<p>Azumarill</p>
-
-						</div>
-
-					</div><!--segundo row-->
-
-					<div class="row"><!--tercer row-->
-						<div class="col-md-2">
-							<img src="assets/img/190.png">
-							<p>Aipom</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/267.png">
-							<p>Beautifly</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/334.png">
-							<p>Altaria</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/298.png">
-							<p>Azurill</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/304.png">
-							<p>Aron</p>
-
-						</div>
-						<div class="col-md-2">
-							<img src="assets/img/306.png">
-							<p>Aggron</p>
-
-						</div>
-
-					</div><!--tercer row-->
-
-				</div>
-
+				<div clas="col-md-12" id="contenedorPoke"></div>
 			</div>
 
-		</div>
+			<div class="row"><!--1 row-->
+					<div class="col-md-3">
+						<img src="assets/img/015.png" id="mostrar">
+						<p>Beedrill</p>
 
-	</section>
+					</div>
+
+					<div class="col-md-3">
+						<img class="image" src="assets/img/024.png">
+						<p>Arbok</p>
+					</div>
+
+					<div class="col-md-3">
+						<img class="image" src="assets/img/059.png">
+						<p>Arcanine</p>
+
+					</div>
+					
+					<div class="col-md-3">
+						<img class="image" src="assets/img/063.png">
+						<p>Abra</p>
+
+					</div>
+				</div>	<!--1 row-->
+					
+					<div class="row"><!--2 row-->
+					<div class="col-md-3">
+						<img class="image" src="assets/img/065.png">
+						<p>Alakazam</p>
+
+					</div>
+					
+					<div class="col-md-3">
+						<img class="image" src="assets/img/142.png">
+						<p>Aerodactyl</p>
+
+					</div>
+
+					<div class="col-md-3">
+						<img src="assets/img/144.png">
+						<p>Articuno</p>
+
+					</div>
+					<div class="col-md-3">
+						<img src="assets/img/153.png">
+						<p>Bayleef</p>
+
+					</div>
+
+					</div><!--2 row-->
+
+					<div class="row"><!--3 row-->
+
+					<div class="col-md-3">
+						<img src="assets/img/168.png">
+						<p>Ariados</p>
+
+					</div>
+					<div class="col-md-3">
+						<img src="assets/img/181.png">
+						<p>Ampharos</p>
+
+					</div>
+					<div class="col-md-3">
+						<img src="assets/img/182.png">
+						<p>Bellossom</p>
+
+					</div>
+					<div class="col-md-3">
+						<img src="assets/img/184.png">
+						<p>Azumarill</p>
+
+					</div>
+
+				</div><!--3 row-->
+
+				<div class="row"><!--4 row-->
+					<div class="col-md-3">
+						<img src="assets/img/190.png">
+						<p>Aipom</p>
+
+					</div>
+					<div class="col-md-3">
+						<img src="assets/img/267.png">
+						<p>Beautifly</p>
+
+					</div>
+					<div class="col-md-3">
+						<img src="assets/img/334.png">
+						<p>Altaria</p>
+
+					</div>
+					<div class="col-md-3">
+						<img src="assets/img/298.png">
+						<p>Azurill</p>
+
+					</div>
+				</div><!--4 row-->
+	</div>
+
+</section>
 
 
-	<script
-	src="https://code.jquery.com/jquery-3.2.1.js"
-	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-	crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
