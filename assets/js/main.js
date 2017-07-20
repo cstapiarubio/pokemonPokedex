@@ -18,5 +18,25 @@ $(document).ready(function(){
 		.fail(function(error){
 			console.log("error");
 		})
+
+		$.ajax({
+			url: 'http://pokeapi.co/api/v2/pokemon/',
+			type: 'GET',
+			datatype: 'JSON',
+
+		})
+
+		.done(function(response){
+             //div vacio//
+             response.forEach(function(pokemon){
+             console.log(pokemon);
+             });
+            
+         })
+
+		.fail(function(error){
+			console.log("error");
+		})
 	});
 })
+
